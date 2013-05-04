@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: cerebrum_dev
   pool: 5
-  username: sample_app
+  username: Jumal
   password:
 
 # Warning: The database defined as "test" will be erased and

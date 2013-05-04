@@ -18,7 +18,7 @@
       <identifier-quote-string>&quot;</identifier-quote-string>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:cerebrum_dev</jdbc-url>
-      <user-name>sample_app</user-name>
+      <user-name>Jumal</user-name>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
