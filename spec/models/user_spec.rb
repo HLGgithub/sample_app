@@ -94,20 +94,24 @@ describe User do
       specify {user_with_wrong_password.should be_false}
     end
 
-  describe "has a password that is too short" do
-    before {@user.password = @user.password_confirmation = "a"*5}
-    it {should_not be_valid }
-  end
-
-
+    describe "has a password that is too short" do
+      before {@user.password = @user.password_confirmation = "a"*5}
+      it {should_not be_valid }
+    end
 
   end
 
 
+  describe "is being tested for an email that was downcased before save" do
+    let(:mixed_case_email) { "mixedEmail@fooBar.Com" }
 
+    it "and therefore should have a lower case email" do
+      @user.email = mixed_case_email
+      @user.save
+      @user.reload.email.should == mixed_case_email.downcase
+    end
 
-
-
+  end
 
 
 
